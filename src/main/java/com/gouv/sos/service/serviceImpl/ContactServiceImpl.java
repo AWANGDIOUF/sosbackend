@@ -41,4 +41,9 @@ public class ContactServiceImpl implements IContactService {
     public List<Contact> getAllContact() {
         return contactRepository.findAll();
     }
+
+    @Override
+    public List<Contact> getAllContactEntreprise(Long idContact) throws ResourceNotFoundException {
+        return contactRepository.AllContacts(idContact);
+    }
 }

@@ -12,4 +12,5 @@ public interface IEquipeService {
     Equipe addEquipe(Equipe equipe);
     void deleteEquipe(Long idEquipe);
     List<Equipe> getAllEquipe();
+    List<Equipe> getAllEquipeEntreprise(Long idEquipe) throws ResourceNotFoundException;
 }

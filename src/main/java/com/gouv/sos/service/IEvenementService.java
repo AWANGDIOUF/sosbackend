@@ -12,4 +12,5 @@ public interface IEvenementService {
     Evenement addEvenement(Evenement evenement);
     void deleteEvenement(Long idEvenement);
     List<Evenement> getAllEvenement();
+    List<Evenement> getAllEvenementEntreprise(Long idEvenement) throws ResourceNotFoundException;
 }

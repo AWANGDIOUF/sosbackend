@@ -12,4 +12,5 @@ public interface IOffreService {
     Offre addOffre(Offre offre);
     void deleteOffre(Long idOffre);
     List<Offre> getAllOffre();
+    List<Offre> getAllOffreEntreprise(Long idOffre) throws ResourceNotFoundException;
 }

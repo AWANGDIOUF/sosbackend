@@ -41,4 +41,10 @@ public class ObjectifServiceImpl implements IObjectifService {
     public List<Objectif> getAllObjectif() {
         return objectifRepository.findAll();
     }
+
+    @Override
+    public List<Objectif> getAllObjectifEntreprise(Long idObjectif) throws ResourceNotFoundException {
+        return objectifRepository.AllObjectifs(idObjectif);
+    }
+
 }

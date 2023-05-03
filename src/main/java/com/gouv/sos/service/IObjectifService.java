@@ -12,4 +12,5 @@ public interface IObjectifService {
     Objectif addObjectif(Objectif objectif);
     void deleteObjectif(Long idObjectif);
     List<Objectif> getAllObjectif();
+    List<Objectif> getAllObjectifEntreprise(Long idObjectif) throws ResourceNotFoundException;
 }

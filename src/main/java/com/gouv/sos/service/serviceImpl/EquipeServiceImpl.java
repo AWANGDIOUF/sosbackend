@@ -40,4 +40,11 @@ public class EquipeServiceImpl implements IEquipeService {
     public List<Equipe> getAllEquipe() {
         return equipeRepository.findAll();
     }
+
+    @Override
+    public List<Equipe> getAllEquipeEntreprise(Long idEquipe) throws ResourceNotFoundException {
+        return equipeRepository.AllEquipes(idEquipe);
+    }
+
+
 }

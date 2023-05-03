@@ -41,4 +41,9 @@ public class OffreServiceImpl implements IOffreService {
     public List<Offre> getAllOffre() {
         return offreRepository.findAll();
     }
+
+    @Override
+    public List<Offre> getAllOffreEntreprise(Long idOffre) throws ResourceNotFoundException {
+        return offreRepository.AllOffres(idOffre);
+    }
 }

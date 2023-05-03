@@ -12,4 +12,5 @@ public interface IContactService {
     Contact addContact(Contact contact);
     void deleteContact(Long idContact);
     List<Contact> getAllContact();
+    List<Contact> getAllContactEntreprise(Long idContact) throws ResourceNotFoundException;
 }

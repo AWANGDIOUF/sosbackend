@@ -12,4 +12,5 @@ public interface IPartenaireService {
     Partenaire addPartenaire(Partenaire partenaire);
     void deletePartenaire(Long idPartenaire);
     List<Partenaire> getAllPartenaire();
+    List<Partenaire> getAllPartenaireEntreprise(Long idPartenaire) throws ResourceNotFoundException;
 }

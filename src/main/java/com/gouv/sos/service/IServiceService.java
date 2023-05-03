@@ -12,4 +12,5 @@ public interface IServiceService {
     Service addService(Service service);
     void deleteService(Long idService);
     List<Service> getAllService();
+    List<Service> getAllServiceEntreprise(Long idService) throws ResourceNotFoundException;
 }

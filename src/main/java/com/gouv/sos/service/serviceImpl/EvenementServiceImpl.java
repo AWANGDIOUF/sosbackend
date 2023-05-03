@@ -41,4 +41,10 @@ public class EvenementServiceImpl implements IEvenementService {
     public List<Evenement> getAllEvenement() {
         return evenementRepository.findAll();
     }
+
+    @Override
+    public List<Evenement> getAllEvenementEntreprise(Long idEvenement) throws ResourceNotFoundException {
+        return evenementRepository.AllEntreprises(idEvenement);
+    }
+
 }

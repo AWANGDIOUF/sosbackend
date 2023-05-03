@@ -41,4 +41,10 @@ public class PartenaireServiceImpl implements IPartenaireService {
     public List<Partenaire> getAllPartenaire() {
         return partenaireRepository.findAll();
     }
+
+    @Override
+    public List<Partenaire> getAllPartenaireEntreprise(Long idPartenaire) throws ResourceNotFoundException {
+        return partenaireRepository.AllPartenaires(idPartenaire);
+    }
+
 }

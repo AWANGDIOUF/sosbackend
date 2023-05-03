@@ -40,4 +40,9 @@ public class ServiceServiceImpl implements IServiceService {
     public List<Service> getAllService() {
         return serviceRepository.findAll();
     }
+
+    @Override
+    public List<Service> getAllServiceEntreprise(Long idService) throws ResourceNotFoundException {
+        return serviceRepository.AllServices(idService);
+    }
 }
