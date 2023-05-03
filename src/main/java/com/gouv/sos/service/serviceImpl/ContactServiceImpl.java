@@ -19,26 +19,26 @@ public class ContactServiceImpl implements IContactService {
 
     @Override
     public Contact getContact(Long idContact) throws ResourceNotFoundException {
-        return null;
+        return contactRepository.findById(idContact).orElseThrow(()->new ResourceNotFoundException("Contact Introuvable"));
     }
 
     @Override
     public Contact updateContact(Contact contact) throws ResourceNotFoundException {
-        return null;
+        return contactRepository.save(contact);
     }
 
     @Override
     public Contact addContact(Contact contact) {
-        return null;
+        return contactRepository.save(contact);
     }
 
     @Override
     public void deleteContact(Long idContact) {
-
+        contactRepository.deleteById(idContact);
     }
 
     @Override
     public List<Contact> getAllContact() {
-        return null;
+        return contactRepository.findAll();
     }
 }

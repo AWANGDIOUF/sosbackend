@@ -8,7 +8,7 @@ import java.util.List;
 public interface IEquipeService {
 
     Equipe getEquipe(Long idEquipe) throws ResourceNotFoundException;
-    Equipe updateEquipe( Equipe Equipe) throws ResourceNotFoundException;
+    Equipe updateEquipe( Equipe equipe) throws ResourceNotFoundException;
     Equipe addEquipe(Equipe equipe);
     void deleteEquipe(Long idEquipe);
     List<Equipe> getAllEquipe();
